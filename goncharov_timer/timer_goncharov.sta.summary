@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'timer_mod:inst|sec[1]'
+Slack : -5.232
+TNS   : -36.169
+
+Type  : Slow 1200mV 85C Model Setup 'baud_rate:inst9|out'
+Slack : -4.448
+TNS   : -36.885
+
+Type  : Slow 1200mV 85C Model Setup 'timer_mod:inst|min[1]'
+Slack : -4.286
+TNS   : -29.300
+
+Type  : Slow 1200mV 85C Model Setup 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -3.431
+TNS   : -28.295
+
+Type  : Slow 1200mV 85C Model Hold 'timer_mod:inst|sec[1]'
+Slack : -5.878
+TNS   : -37.815
+
+Type  : Slow 1200mV 85C Model Hold 'timer_mod:inst|min[1]'
+Slack : -5.724
+TNS   : -38.632
+
+Type  : Slow 1200mV 85C Model Hold 'baud_rate:inst9|out'
+Slack : -2.802
+TNS   : -10.818
+
+Type  : Slow 1200mV 85C Model Hold 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -0.442
+TNS   : -0.442
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'timer_mod:inst|sec[1]'
+Slack : -1.667
+TNS   : -70.784
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'timer_mod:inst|min[1]'
+Slack : -1.428
+TNS   : -51.234
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -1.285
+TNS   : -19.275
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'baud_rate:inst9|out'
+Slack : -1.285
+TNS   : -15.420
+
+Type  : Slow 1200mV 0C Model Setup 'timer_mod:inst|sec[1]'
+Slack : -4.739
+TNS   : -32.764
+
+Type  : Slow 1200mV 0C Model Setup 'timer_mod:inst|min[1]'
+Slack : -3.953
+TNS   : -26.857
+
+Type  : Slow 1200mV 0C Model Setup 'baud_rate:inst9|out'
+Slack : -3.911
+TNS   : -32.440
+
+Type  : Slow 1200mV 0C Model Setup 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -2.997
+TNS   : -24.059
+
+Type  : Slow 1200mV 0C Model Hold 'timer_mod:inst|sec[1]'
+Slack : -5.256
+TNS   : -33.810
+
+Type  : Slow 1200mV 0C Model Hold 'timer_mod:inst|min[1]'
+Slack : -5.140
+TNS   : -34.683
+
+Type  : Slow 1200mV 0C Model Hold 'baud_rate:inst9|out'
+Slack : -2.523
+TNS   : -9.886
+
+Type  : Slow 1200mV 0C Model Hold 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -0.292
+TNS   : -0.292
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'timer_mod:inst|sec[1]'
+Slack : -1.545
+TNS   : -60.160
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'timer_mod:inst|min[1]'
+Slack : -1.323
+TNS   : -43.538
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -1.285
+TNS   : -19.275
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'baud_rate:inst9|out'
+Slack : -1.285
+TNS   : -15.420
+
+Type  : Fast 1200mV 0C Model Setup 'timer_mod:inst|sec[1]'
+Slack : -1.826
+TNS   : -12.517
+
+Type  : Fast 1200mV 0C Model Setup 'baud_rate:inst9|out'
+Slack : -1.745
+TNS   : -12.563
+
+Type  : Fast 1200mV 0C Model Setup 'timer_mod:inst|min[1]'
+Slack : -1.281
+TNS   : -8.686
+
+Type  : Fast 1200mV 0C Model Setup 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -1.136
+TNS   : -6.665
+
+Type  : Fast 1200mV 0C Model Hold 'timer_mod:inst|sec[1]'
+Slack : -3.032
+TNS   : -19.705
+
+Type  : Fast 1200mV 0C Model Hold 'timer_mod:inst|min[1]'
+Slack : -2.994
+TNS   : -20.244
+
+Type  : Fast 1200mV 0C Model Hold 'baud_rate:inst9|out'
+Slack : -1.515
+TNS   : -6.094
+
+Type  : Fast 1200mV 0C Model Hold 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -0.297
+TNS   : -0.297
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ALTPLL_1:inst1|altpll:altpll_component|ALTPLL_1_altpll:auto_generated|pll_lock_sync'
+Slack : -1.000
+TNS   : -15.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'baud_rate:inst9|out'
+Slack : -1.000
+TNS   : -12.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'timer_mod:inst|sec[1]'
+Slack : -0.608
+TNS   : -19.401
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'timer_mod:inst|min[1]'
+Slack : -0.489
+TNS   : -13.904
+
+------------------------------------------------------------

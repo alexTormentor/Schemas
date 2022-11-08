@@ -1,0 +1,17 @@
+module baud_rate(
+input wire clock,
+output reg out
+);
+reg [13:0]clkr_5000 = 14'b0;
+initial begin
+	out = 0;
+end
+always @(posedge clock) begin
+		clkr_5000 = clkr_5000 + 14'b1;
+		if (clkr_5000 == 2500) begin
+				clkr_5000 = 14'b0;
+				out = ~out;
+		end
+end
+
+endmodule
