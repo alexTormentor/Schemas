@@ -1,0 +1,300 @@
+|lcd_parallel
+LCD_ON <= fsm_lcd_parallel:inst.LCD_ON
+CLOCK_50 => pll1:inst5.inclk0
+KEY[1] => inst13.IN0
+KEY[0] => fsm_lcd_parallel:inst.resetn
+KEY[3] => ff1:inst4.clock
+KEY[3] => ff1:inst3.clock
+SW[17] => my_dmux0:inst9.select
+SW[7] => my_dmux0:inst9.in[7]
+SW[6] => my_dmux0:inst9.in[6]
+SW[5] => my_dmux0:inst9.in[5]
+SW[4] => my_dmux0:inst9.in[4]
+SW[3] => my_dmux0:inst9.in[3]
+SW[2] => my_dmux0:inst9.in[2]
+SW[1] => my_dmux0:inst9.in[1]
+SW[0] => my_dmux0:inst9.in[0]
+LCD_RS <= fsm_lcd_parallel:inst.LCD_RS
+LCD_EN <= fsm_lcd_parallel:inst.LCD_EN
+LCD_RW <= fsm_lcd_parallel:inst.LCD_RW
+LCD_BLON <= fsm_lcd_parallel:inst.LCD_BLON
+LCD_DATA[0] <= fsm_lcd_parallel:inst.LCD_DATA[0]
+LCD_DATA[1] <= fsm_lcd_parallel:inst.LCD_DATA[1]
+LCD_DATA[2] <= fsm_lcd_parallel:inst.LCD_DATA[2]
+LCD_DATA[3] <= fsm_lcd_parallel:inst.LCD_DATA[3]
+LCD_DATA[4] <= fsm_lcd_parallel:inst.LCD_DATA[4]
+LCD_DATA[5] <= fsm_lcd_parallel:inst.LCD_DATA[5]
+LCD_DATA[6] <= fsm_lcd_parallel:inst.LCD_DATA[6]
+LCD_DATA[7] <= fsm_lcd_parallel:inst.LCD_DATA[7]
+
+
+|lcd_parallel|fsm_lcd_parallel:inst
+CLK_400Hz => p_state~1.DATAIN
+resetn => p_state~3.DATAIN
+characterIN[0] => Selector7.IN6
+characterIN[1] => Selector6.IN6
+characterIN[2] => Selector5.IN6
+characterIN[3] => Selector4.IN6
+characterIN[4] => Selector3.IN6
+characterIN[5] => Selector2.IN6
+characterIN[6] => Selector1.IN4
+characterIN[7] => Selector0.IN4
+addressIN[0] => Selector7.IN7
+addressIN[1] => Selector6.IN7
+addressIN[2] => Selector5.IN7
+addressIN[3] => Selector4.IN7
+addressIN[4] => Selector3.IN7
+addressIN[5] => Selector2.IN7
+addressIN[6] => Selector1.IN5
+addressIN[7] => Selector0.IN5
+LCD_ON <= <VCC>
+LCD_BLON <= <GND>
+LCD_RS <= LCD_RS.DB_MAX_OUTPUT_PORT_TYPE
+LCD_EN <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+LCD_RW <= <GND>
+LCD_DATA[0] <= LCD_DATA[0].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[1] <= LCD_DATA[1].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[2] <= LCD_DATA[2].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[3] <= LCD_DATA[3].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[4] <= LCD_DATA[4].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[5] <= LCD_DATA[5].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[6] <= LCD_DATA[6].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[7] <= LCD_DATA[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lcd_parallel|clock_divider400Hz:inst6
+clock => out~reg0.CLK
+clock => clkr_10[0].CLK
+clock => clkr_10[1].CLK
+clock => clkr_10[2].CLK
+clock => clkr_10[3].CLK
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lcd_parallel|pll1:inst5
+areset => areset.IN1
+inclk0 => sub_wire3[0].IN1
+c0 <= altpll:altpll_component.clk
+
+
+|lcd_parallel|pll1:inst5|altpll:altpll_component
+inclk[0] => pll1_altpll:auto_generated.inclk[0]
+inclk[1] => pll1_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => pll1_altpll:auto_generated.areset
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|lcd_parallel|pll1:inst5|altpll:altpll_component|pll1_altpll:auto_generated
+areset => pll1.ARESET
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+
+|lcd_parallel|ff1:inst4
+clock => clock.IN1
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+data[4] => data[4].IN1
+data[5] => data[5].IN1
+data[6] => data[6].IN1
+data[7] => data[7].IN1
+q[0] <= lpm_ff:lpm_ff_component.q
+q[1] <= lpm_ff:lpm_ff_component.q
+q[2] <= lpm_ff:lpm_ff_component.q
+q[3] <= lpm_ff:lpm_ff_component.q
+q[4] <= lpm_ff:lpm_ff_component.q
+q[5] <= lpm_ff:lpm_ff_component.q
+q[6] <= lpm_ff:lpm_ff_component.q
+q[7] <= lpm_ff:lpm_ff_component.q
+
+
+|lcd_parallel|ff1:inst4|lpm_ff:lpm_ff_component
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lcd_parallel|my_dmux0:inst9
+in[0] => ~NO_FANOUT~
+in[1] => ~NO_FANOUT~
+in[2] => ~NO_FANOUT~
+in[3] => ~NO_FANOUT~
+in[4] => ~NO_FANOUT~
+in[5] => ~NO_FANOUT~
+in[6] => ~NO_FANOUT~
+in[7] => ~NO_FANOUT~
+select => ~NO_FANOUT~
+out1[0] <= <GND>
+out1[1] <= <GND>
+out1[2] <= <GND>
+out1[3] <= <GND>
+out1[4] <= <GND>
+out1[5] <= <GND>
+out1[6] <= <GND>
+out1[7] <= <GND>
+out2[0] <= <VCC>
+out2[1] <= <GND>
+out2[2] <= <GND>
+out2[3] <= <GND>
+out2[4] <= <GND>
+out2[5] <= <GND>
+out2[6] <= <GND>
+out2[7] <= <GND>
+
+
+|lcd_parallel|ff1:inst3
+clock => clock.IN1
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+data[4] => data[4].IN1
+data[5] => data[5].IN1
+data[6] => data[6].IN1
+data[7] => data[7].IN1
+q[0] <= lpm_ff:lpm_ff_component.q
+q[1] <= lpm_ff:lpm_ff_component.q
+q[2] <= lpm_ff:lpm_ff_component.q
+q[3] <= lpm_ff:lpm_ff_component.q
+q[4] <= lpm_ff:lpm_ff_component.q
+q[5] <= lpm_ff:lpm_ff_component.q
+q[6] <= lpm_ff:lpm_ff_component.q
+q[7] <= lpm_ff:lpm_ff_component.q
+
+
+|lcd_parallel|ff1:inst3|lpm_ff:lpm_ff_component
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,18 @@
+module clock_divider400(
+	input wire clock,
+	output reg out
+);
+    reg[3:0]clkr_10 = 4'b0;
+    initial begin
+        out = 0;
+    end
+    always @(posedge clock)
+    begin
+        clkr_10 <= clkr_10 + 4'b1;
+        if (clkr_10 == 5)
+        begin
+            clkr_10 <= 4'b0;
+            out <= ~out;
+        end
+    end
+endmodule

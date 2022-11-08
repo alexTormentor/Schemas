@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock_divider400Hz:inst6|out'
+Slack : -0.611
+TNS   : -2.255
+
+Type  : Slow 1200mV 85C Model Setup 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.242
+TNS   : -0.242
+
+Type  : Slow 1200mV 85C Model Hold 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.144
+TNS   : -0.144
+
+Type  : Slow 1200mV 85C Model Hold 'clock_divider400Hz:inst6|out'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_divider400Hz:inst6|out'
+Slack : -1.285
+TNS   : -25.700
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.811
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 124999.710
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clock_divider400Hz:inst6|out'
+Slack : -0.463
+TNS   : -1.092
+
+Type  : Slow 1200mV 0C Model Setup 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.032
+TNS   : -0.032
+
+Type  : Slow 1200mV 0C Model Hold 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.267
+TNS   : -0.267
+
+Type  : Slow 1200mV 0C Model Hold 'clock_divider400Hz:inst6|out'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_divider400Hz:inst6|out'
+Slack : -1.285
+TNS   : -25.700
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.784
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 124999.709
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.049
+TNS   : -0.049
+
+Type  : Fast 1200mV 0C Model Setup 'clock_divider400Hz:inst6|out'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Fast 1200mV 0C Model Hold 'clock_divider400Hz:inst6|out'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_divider400Hz:inst6|out'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.401
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 124999.780
+TNS   : 0.000
+
+------------------------------------------------------------
