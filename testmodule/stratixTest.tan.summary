@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.050 ns
+From           : SW[0]
+To             : ff1:inst3|lpm_ff:lpm_ff_component|dffs[0]
+From Clock     : --
+To Clock       : SW17
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.378 ns
+From           : ff1:inst4|lpm_ff:lpm_ff_component|dffs[5]
+To             : address[5]
+From Clock     : KEY3
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.970 ns
+From           : SW[5]
+To             : ff1:inst4|lpm_ff:lpm_ff_component|dffs[5]
+From Clock     : --
+To Clock       : KEY3
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

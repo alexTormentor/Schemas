@@ -15,7 +15,7 @@ module fsm_lcd_parallel(
 
     // определение направления передачи и разрядности данных
     input CLK_400Hz, resetn;
-    input[7:0] characterIN, addressIN;
+    input[7:0] characterIN, addressIN;// 0 -адрес 1 - символ
     output LCD_ON, LCD_BLON, LCD_RS, LCD_EN, LCD_RW;
     output[7:0] LCD_DATA;
 

@@ -20,42 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-pll1
-# storage
-db|lcd.(3).cnf
-db|lcd.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-pll1.v
-5ad56de108c97de6ea121b74f79659d
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-pll1:inst5
-}
-# macro_sequence
-ALTERA_RESERVED_QISALTERA_RESERVED_QIS
-# end
-# entity
 altpll
 # storage
 db|lcd.(4).cnf
@@ -1586,111 +1550,6 @@ clkena
 
 # end
 # entity
-pll1_altpll
-# storage
-db|lcd.(5).cnf
-db|lcd.(5).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-db|pll1_altpll.v
-38af2a5f9f834e6857658997276455b
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-pll1:inst5|altpll:altpll_component|pll1_altpll:auto_generated
-}
-# macro_sequence
-ALTERA_RESERVED_QISALTERA_RESERVED_QIS
-# end
-# entity
-clock_divider400Hz
-# storage
-db|lcd.(2).cnf
-db|lcd.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-clock_divider400hz.v
-7ac32d494eb8961e803099ced5597
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-clock_divider400Hz:inst6
-}
-# macro_sequence
-
-# end
-# entity
-bin6_to_dec
-# storage
-db|lcd.(6).cnf
-db|lcd.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-bin6_to_dec.v
-9d71b69d667968eb52e22a4ad1d27cc
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
 lpm_divide
 # storage
 db|lcd.(9).cnf
@@ -1806,276 +1665,6 @@ denom1
 
 # end
 # entity
-lpm_divide_k9m
-# storage
-db|lcd.(10).cnf
-db|lcd.(10).cnf
-# case_insensitive
-# source_file
-db|lpm_divide_k9m.tdf
-3ac8eb6fe5ca642dc6415b7dcd127f
-7
-# used_port {
-remain3
--1
-3
-remain2
--1
-3
-remain1
--1
-3
-remain0
--1
-3
-numer5
--1
-3
-numer4
--1
-3
-numer3
--1
-3
-numer2
--1
-3
-numer1
--1
-3
-numer0
--1
-3
-denom3
--1
-3
-denom2
--1
-3
-denom1
--1
-3
-denom0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-sign_div_unsign_9kh
-# storage
-db|lcd.(11).cnf
-db|lcd.(11).cnf
-# case_insensitive
-# source_file
-db|sign_div_unsign_9kh.tdf
-24d3ee53cfecee127ebb8fcdc8559e
-7
-# used_port {
-remainder3
--1
-3
-remainder2
--1
-3
-remainder1
--1
-3
-remainder0
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numerator5
--1
-3
-numerator4
--1
-3
-numerator3
--1
-3
-numerator2
--1
-3
-numerator1
--1
-3
-numerator0
--1
-3
-denominator3
--1
-3
-denominator2
--1
-3
-denominator1
--1
-3
-denominator0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-alt_u_div_64f
-# storage
-db|lcd.(12).cnf
-db|lcd.(12).cnf
-# case_insensitive
-# source_file
-db|alt_u_div_64f.tdf
-e9159acd366b9563476278a5c877b21
-7
-# used_port {
-remainder3
--1
-3
-remainder2
--1
-3
-remainder1
--1
-3
-remainder0
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numerator5
--1
-3
-numerator4
--1
-3
-numerator3
--1
-3
-numerator2
--1
-3
-numerator1
--1
-3
-numerator0
--1
-3
-denominator3
--1
-3
-denominator2
--1
-3
-denominator1
--1
-3
-denominator0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-add_sub_7pc
-# storage
-db|lcd.(13).cnf
-db|lcd.(13).cnf
-# case_insensitive
-# source_file
-db|add_sub_7pc.tdf
-8cd642a1df16ca76c8cafb6ed22fc0b2
-7
-# used_port {
-result0
--1
-3
-datab0
--1
-3
-dataa0
--1
-3
-cout
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-add_sub_8pc
-# storage
-db|lcd.(14).cnf
-db|lcd.(14).cnf
-# case_insensitive
-# source_file
-db|add_sub_8pc.tdf
-23e23230b5442d2fa8e0a64aed057
-7
-# used_port {
-result1
--1
-3
-result0
--1
-3
-datab1
--1
-3
-datab0
--1
-3
-dataa1
--1
-3
-dataa0
--1
-3
-cout
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
 lpm_divide
 # storage
 db|lcd.(15).cnf
@@ -2186,273 +1775,6 @@ denom3
 denom1
 -1
 2
-}
-# macro_sequence
-
-# end
-# entity
-lpm_divide_hhm
-# storage
-db|lcd.(16).cnf
-db|lcd.(16).cnf
-# case_insensitive
-# source_file
-db|lpm_divide_hhm.tdf
-2b72dd833c137651d288b6d9ec244fac
-7
-# used_port {
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numer5
--1
-3
-numer4
--1
-3
-numer3
--1
-3
-numer2
--1
-3
-numer1
--1
-3
-numer0
--1
-3
-denom3
--1
-3
-denom2
--1
-3
-denom1
--1
-3
-denom0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-timer_mod
-# storage
-db|lcd.(7).cnf
-db|lcd.(7).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-timer_mod.v
-2dff45a4a23ddf32ae39774477cbec8
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-fsm_lcd
-# storage
-db|lcd.(1).cnf
-db|lcd.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-fsm_lcd.v
-53f5595ad34c9adc687f8309ce3aa
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-reset1
-000001
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e1
-010100
-PARAMETER_UNSIGNED_BIN
-USR
-reset2
-000010
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e2
-010101
-PARAMETER_UNSIGNED_BIN
-USR
-reset3
-000011
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e3
-010110
-PARAMETER_UNSIGNED_BIN
-USR
-func_set
-000100
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e4
-010111
-PARAMETER_UNSIGNED_BIN
-USR
-display_off
-000101
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e5
-011000
-PARAMETER_UNSIGNED_BIN
-USR
-display_clear
-000110
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e6
-011001
-PARAMETER_UNSIGNED_BIN
-USR
-display_on
-000111
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e7
-011010
-PARAMETER_UNSIGNED_BIN
-USR
-mode_set
-001000
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e8
-011011
-PARAMETER_UNSIGNED_BIN
-USR
-write_char1
-001001
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e9
-011100
-PARAMETER_UNSIGNED_BIN
-USR
-write_char2
-001010
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e10
-011101
-PARAMETER_UNSIGNED_BIN
-USR
-write_char3
-001011
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e11
-011110
-PARAMETER_UNSIGNED_BIN
-USR
-write_char4
-001100
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e12
-011111
-PARAMETER_UNSIGNED_BIN
-USR
-write_char5
-001101
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e13
-100000
-PARAMETER_UNSIGNED_BIN
-USR
-write_char6
-001110
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e14
-100001
-PARAMETER_UNSIGNED_BIN
-USR
-write_char7
-001111
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e15
-100010
-PARAMETER_UNSIGNED_BIN
-USR
-write_char8
-010000
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e16
-100011
-PARAMETER_UNSIGNED_BIN
-USR
-return_home
-010011
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e17
-100100
-PARAMETER_UNSIGNED_BIN
-USR
 }
 # macro_sequence
 
@@ -4221,174 +3543,6 @@ denom1
 
 # end
 # entity
-lcd
-# storage
-db|lcd.(0).cnf
-db|lcd.(0).cnf
-# case_insensitive
-# source_file
-lcd.bdf
-865538207a2dcdd0ccbd479c1defcfa
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-clock_divider1Hz
-# storage
-db|lcd.(20).cnf
-db|lcd.(20).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-clock_divider1hz.v
-10d248b8525cae26eaa16e7737e4a55
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-fsm_lcd_parallel
-# storage
-db|lcd.(21).cnf
-db|lcd.(21).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-fsm_lcd_parallel.v
-313480abb6f23e1a42399d753e7503c
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-reset1
-000001
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e1
-000010
-PARAMETER_UNSIGNED_BIN
-USR
-reset2
-000011
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e2
-000100
-PARAMETER_UNSIGNED_BIN
-USR
-reset3
-000101
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e3
-000110
-PARAMETER_UNSIGNED_BIN
-USR
-func_set
-000111
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e4
-001000
-PARAMETER_UNSIGNED_BIN
-USR
-display_off
-001001
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e5
-001010
-PARAMETER_UNSIGNED_BIN
-USR
-display_clear
-001011
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e6
-001100
-PARAMETER_UNSIGNED_BIN
-USR
-display_on
-001101
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e7
-001110
-PARAMETER_UNSIGNED_BIN
-USR
-mode_set
-001111
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e8
-010000
-PARAMETER_UNSIGNED_BIN
-USR
-write_address
-010001
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e9
-010010
-PARAMETER_UNSIGNED_BIN
-USR
-write_char
-010011
-PARAMETER_UNSIGNED_BIN
-USR
-toggle_e10
-010100
-PARAMETER_UNSIGNED_BIN
-USR
-}
-# hierarchies {
-fsm_lcd_parallel:inst
-}
-# macro_sequence
-
-# end
-# entity
 lpm_ff
 # storage
 db|lcd.(23).cnf
@@ -4528,18 +3682,384 @@ clock
 
 # end
 # entity
-my_dmux0
+bin6_to_dec
 # storage
-db|lcd.(25).cnf
-db|lcd.(25).cnf
+db|lcd.(0).cnf
+db|lcd.(0).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-my_dmux0.v
-b25f6dd33d1d851d16f3a603ba546a2
+bin6_to_dec.v
+b24369cd7765ae4112a0fbb995ac6f7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide_k9m
+# storage
+db|lcd.(1).cnf
+db|lcd.(1).cnf
+# case_insensitive
+# source_file
+db|lpm_divide_k9m.tdf
+8c1922a20a73f204bf2b9ecaf6ab1f
+7
+# used_port {
+remain3
+-1
+3
+remain2
+-1
+3
+remain1
+-1
+3
+remain0
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+sign_div_unsign_9kh
+# storage
+db|lcd.(2).cnf
+db|lcd.(2).cnf
+# case_insensitive
+# source_file
+db|sign_div_unsign_9kh.tdf
+cac21edd96ecc08eee2611d1775fb719
+7
+# used_port {
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+alt_u_div_64f
+# storage
+db|lcd.(3).cnf
+db|lcd.(3).cnf
+# case_insensitive
+# source_file
+db|alt_u_div_64f.tdf
+7f80541fec17f1fcb51619288d35480
+7
+# used_port {
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_7pc
+# storage
+db|lcd.(5).cnf
+db|lcd.(5).cnf
+# case_insensitive
+# source_file
+db|add_sub_7pc.tdf
+233b8d188eb7db541f5dbcb8cec94a83
+7
+# used_port {
+result0
+-1
+3
+datab0
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_8pc
+# storage
+db|lcd.(6).cnf
+db|lcd.(6).cnf
+# case_insensitive
+# source_file
+db|add_sub_8pc.tdf
+82ca48ce9f7fd672ec5591ecfc6285e
+7
+# used_port {
+result1
+-1
+3
+result0
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide_hhm
+# storage
+db|lcd.(7).cnf
+db|lcd.(7).cnf
+# case_insensitive
+# source_file
+db|lpm_divide_hhm.tdf
+e8ca1dc9659f45ea91a186ee6e5d5ec
+7
+# used_port {
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+clock_divider400Hz
+# storage
+db|lcd.(11).cnf
+db|lcd.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+clock_divider400hz.v
+05aa21771f5943f63d8e3aa2711516f
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -4558,36 +4078,88 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-my_dmux0:inst9
+clock_divider400Hz:inst6
 }
 # macro_sequence
 
 # end
 # entity
-lcd_parallel
+pll1
 # storage
-db|lcd.(8).cnf
-db|lcd.(8).cnf
-# case_insensitive
+db|lcd.(12).cnf
+db|lcd.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
 # source_file
-lcd_parallel.bdf
-1c5cea7e1ff56c59ebf34f40cb31b18e
-26
+pll1.v
+6e22971b8430b4be84afb14219a75bf5
+8
 # internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # hierarchies {
-|
+pll1:inst5
 }
 # macro_sequence
-
+ALTERA_RESERVED_QISALTERA_RESERVED_QIS
+# end
+# entity
+pll1_altpll
+# storage
+db|lcd.(13).cnf
+db|lcd.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+db|pll1_altpll.v
+f176dea2fe2f2e3bb9e97f13de37e3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+pll1:inst5|altpll:altpll_component|pll1_altpll:auto_generated
+}
+# macro_sequence
+ALTERA_RESERVED_QISALTERA_RESERVED_QIS
 # end
 # entity
 ff1
 # storage
-db|lcd.(22).cnf
-db|lcd.(22).cnf
+db|lcd.(14).cnf
+db|lcd.(14).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4595,7 +4167,7 @@ ON
 # case_sensitive
 # source_file
 ff1.v
-d1d1e69eb123c2cd6d65123c4532be98
+4bf42cd858d6d820cb249b72ab486c1
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -4616,6 +4188,194 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 # hierarchies {
 ff1:inst4
 ff1:inst3
+}
+# macro_sequence
+
+# end
+# entity
+my_dmux0
+# storage
+db|lcd.(16).cnf
+db|lcd.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+my_dmux0.v
+63a0101f5d7d4f8ac38df56a3a92f71
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+lcd_parallel
+# storage
+db|lcd.(8).cnf
+db|lcd.(8).cnf
+# case_insensitive
+# source_file
+lcd_parallel.bdf
+137a3485a275657360f849bd6bf2e4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+ModuleTest
+# storage
+db|lcd.(20).cnf
+db|lcd.(20).cnf
+# case_insensitive
+# source_file
+moduletest.bdf
+4bf4dcdf317996977959bc8fc0f4a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+fsm_lcd_parallel
+# storage
+db|lcd.(10).cnf
+db|lcd.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+fsm_lcd_parallel.v
+f3939bc08bcf7486267137b5ed6eec98
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+reset1
+000001
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e1
+000010
+PARAMETER_UNSIGNED_BIN
+USR
+reset2
+000011
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e2
+000100
+PARAMETER_UNSIGNED_BIN
+USR
+reset3
+000101
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e3
+000110
+PARAMETER_UNSIGNED_BIN
+USR
+func_set
+000111
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e4
+001000
+PARAMETER_UNSIGNED_BIN
+USR
+display_off
+001001
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e5
+001010
+PARAMETER_UNSIGNED_BIN
+USR
+display_clear
+001011
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e6
+001100
+PARAMETER_UNSIGNED_BIN
+USR
+display_on
+001101
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e7
+001110
+PARAMETER_UNSIGNED_BIN
+USR
+mode_set
+001111
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e8
+010000
+PARAMETER_UNSIGNED_BIN
+USR
+write_address
+010001
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e9
+010010
+PARAMETER_UNSIGNED_BIN
+USR
+write_char
+010011
+PARAMETER_UNSIGNED_BIN
+USR
+toggle_e10
+010100
+PARAMETER_UNSIGNED_BIN
+USR
+}
+# hierarchies {
+fsm_lcd_parallel:inst
 }
 # macro_sequence
 
