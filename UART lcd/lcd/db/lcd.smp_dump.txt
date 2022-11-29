@@ -1,0 +1,23 @@
+
+State Machine - |lcd_parallel|fsm_lcd_parallel:inst|p_state
+Name p_state.toggle_e10 p_state.write_char p_state.toggle_e9 p_state.write_address p_state.toggle_e8 p_state.mode_set p_state.toggle_e7 p_state.display_on p_state.toggle_e6 p_state.display_clear p_state.toggle_e5 p_state.display_off p_state.toggle_e4 p_state.func_set p_state.toggle_e3 p_state.reset3 p_state.toggle_e2 p_state.reset2 p_state.toggle_e1 p_state.reset1 
+p_state.reset1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+p_state.toggle_e1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+p_state.reset2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+p_state.toggle_e2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+p_state.reset3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+p_state.toggle_e3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+p_state.func_set 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+p_state.toggle_e4 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+p_state.display_off 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+p_state.toggle_e5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+p_state.display_clear 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+p_state.toggle_e6 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+p_state.display_on 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+p_state.toggle_e7 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+p_state.mode_set 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+p_state.toggle_e8 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+p_state.write_address 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+p_state.toggle_e9 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+p_state.write_char 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+p_state.toggle_e10 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

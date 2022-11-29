@@ -1,0 +1,161 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'uart_verilog:inst1|clk_9600'
+Slack : -8.376
+TNS   : -52.538
+
+Type  : Slow 1200mV 85C Model Setup 'clock_divider400Hz:inst6|out'
+Slack : -0.366
+TNS   : -1.083
+
+Type  : Slow 1200mV 85C Model Setup 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.261
+TNS   : -0.261
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'uart_verilog:inst1|clk_9600'
+Slack : -0.309
+TNS   : -0.668
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : -0.182
+TNS   : -0.182
+
+Type  : Slow 1200mV 85C Model Hold 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.124
+TNS   : -0.124
+
+Type  : Slow 1200mV 85C Model Hold 'clock_divider400Hz:inst6|out'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uart_verilog:inst1|clk_9600'
+Slack : -1.285
+TNS   : -38.550
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_divider400Hz:inst6|out'
+Slack : -1.285
+TNS   : -25.700
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uart_verilog:inst1|uart_tx_send_pulse'
+Slack : -1.285
+TNS   : -10.280
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.585
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 124999.712
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'uart_verilog:inst1|clk_9600'
+Slack : -7.574
+TNS   : -46.148
+
+Type  : Slow 1200mV 0C Model Setup 'clock_divider400Hz:inst6|out'
+Slack : -0.245
+TNS   : -0.364
+
+Type  : Slow 1200mV 0C Model Setup 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.053
+TNS   : -0.053
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : 0.071
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.246
+TNS   : -0.246
+
+Type  : Slow 1200mV 0C Model Hold 'uart_verilog:inst1|clk_9600'
+Slack : -0.240
+TNS   : -0.396
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.197
+TNS   : -0.197
+
+Type  : Slow 1200mV 0C Model Hold 'clock_divider400Hz:inst6|out'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uart_verilog:inst1|clk_9600'
+Slack : -1.285
+TNS   : -38.550
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_divider400Hz:inst6|out'
+Slack : -1.285
+TNS   : -25.700
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uart_verilog:inst1|uart_tx_send_pulse'
+Slack : -1.285
+TNS   : -10.280
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.594
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 124999.711
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'uart_verilog:inst1|clk_9600'
+Slack : -3.940
+TNS   : -13.653
+
+Type  : Fast 1200mV 0C Model Setup 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.063
+TNS   : -0.063
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clock_divider400Hz:inst6|out'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'uart_verilog:inst1|clk_9600'
+Slack : -0.234
+TNS   : -0.361
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.215
+TNS   : -0.215
+
+Type  : Fast 1200mV 0C Model Hold 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_divider400Hz:inst6|out'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uart_verilog:inst1|clk_9600'
+Slack : -1.000
+TNS   : -30.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_divider400Hz:inst6|out'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uart_verilog:inst1|uart_tx_send_pulse'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.237
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst5|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 124999.782
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lcd">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lcd_parallel|lpm_counter0:inst3|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_5ei.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lcd_parallel|pll1:inst5|altpll:altpll_component" CBX_FILE_NAME="pll1_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

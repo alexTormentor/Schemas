@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for lab1
-Tue Sep 20 12:18:37 2022
+Wed Nov 23 22:39:00 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+-------------+-------+---------+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time ; From  ; To      ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+-------------+-------+---------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 9.754 ns    ; SW[0] ; HEX0[4] ; --         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 10.298 ns   ; SW[2] ; HEX0[0] ; --         ; --       ; 0            ;
 ; Total number of failed paths ;       ;               ;             ;       ;         ;            ;          ; 0            ;
 +------------------------------+-------+---------------+-------------+-------+---------+------------+----------+--------------+
 
@@ -73,6 +73,7 @@ applicable agreement for further details.
 ; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
 ; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
 ; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
+; Enables Advanced I/O Timing                                                                          ; On                 ;      ;    ;             ;
 +------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
 
 
@@ -82,7 +83,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 6      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -92,30 +93,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------+-------------------+-----------------+-------+---------+
 ; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To      ;
 +-------+-------------------+-----------------+-------+---------+
-; N/A   ; None              ; 9.754 ns        ; SW[0] ; HEX0[4] ;
-; N/A   ; None              ; 9.713 ns        ; SW[2] ; HEX0[4] ;
-; N/A   ; None              ; 9.483 ns        ; SW[0] ; HEX0[5] ;
-; N/A   ; None              ; 9.452 ns        ; SW[0] ; HEX0[1] ;
-; N/A   ; None              ; 9.447 ns        ; SW[1] ; HEX0[4] ;
-; N/A   ; None              ; 9.442 ns        ; SW[2] ; HEX0[5] ;
-; N/A   ; None              ; 9.256 ns        ; SW[2] ; HEX0[1] ;
-; N/A   ; None              ; 9.177 ns        ; SW[1] ; HEX0[5] ;
-; N/A   ; None              ; 9.145 ns        ; SW[1] ; HEX0[1] ;
-; N/A   ; None              ; 9.118 ns        ; SW[0] ; HEX0[3] ;
-; N/A   ; None              ; 9.112 ns        ; SW[0] ; HEX0[2] ;
-; N/A   ; None              ; 9.085 ns        ; SW[0] ; HEX0[7] ;
-; N/A   ; None              ; 9.077 ns        ; SW[2] ; HEX0[2] ;
-; N/A   ; None              ; 9.055 ns        ; SW[0] ; HEX0[0] ;
-; N/A   ; None              ; 9.048 ns        ; SW[2] ; HEX0[7] ;
-; N/A   ; None              ; 9.018 ns        ; SW[2] ; HEX0[0] ;
-; N/A   ; None              ; 8.924 ns        ; SW[2] ; HEX0[3] ;
-; N/A   ; None              ; 8.815 ns        ; SW[1] ; HEX0[7] ;
-; N/A   ; None              ; 8.808 ns        ; SW[1] ; HEX0[3] ;
-; N/A   ; None              ; 8.803 ns        ; SW[1] ; HEX0[2] ;
-; N/A   ; None              ; 8.749 ns        ; SW[1] ; HEX0[0] ;
-; N/A   ; None              ; 8.581 ns        ; SW[0] ; HEX0[6] ;
-; N/A   ; None              ; 8.544 ns        ; SW[2] ; HEX0[6] ;
-; N/A   ; None              ; 8.276 ns        ; SW[1] ; HEX0[6] ;
+; N/A   ; None              ; 10.298 ns       ; SW[2] ; HEX0[0] ;
+; N/A   ; None              ; 10.180 ns       ; SW[0] ; HEX0[0] ;
+; N/A   ; None              ; 9.985 ns        ; SW[3] ; HEX0[0] ;
+; N/A   ; None              ; 9.984 ns        ; SW[1] ; HEX0[0] ;
+; N/A   ; None              ; 9.282 ns        ; SW[2] ; HEX0[5] ;
+; N/A   ; None              ; 9.248 ns        ; SW[3] ; HEX0[5] ;
+; N/A   ; None              ; 9.160 ns        ; SW[2] ; HEX0[1] ;
+; N/A   ; None              ; 9.135 ns        ; SW[0] ; HEX0[5] ;
+; N/A   ; None              ; 9.125 ns        ; SW[3] ; HEX0[1] ;
+; N/A   ; None              ; 8.983 ns        ; SW[1] ; HEX0[5] ;
+; N/A   ; None              ; 8.976 ns        ; SW[0] ; HEX0[1] ;
+; N/A   ; None              ; 8.974 ns        ; SW[2] ; HEX0[2] ;
+; N/A   ; None              ; 8.939 ns        ; SW[3] ; HEX0[2] ;
+; N/A   ; None              ; 8.890 ns        ; SW[2] ; HEX0[3] ;
+; N/A   ; None              ; 8.859 ns        ; SW[1] ; HEX0[1] ;
+; N/A   ; None              ; 8.854 ns        ; SW[3] ; HEX0[3] ;
+; N/A   ; None              ; 8.791 ns        ; SW[0] ; HEX0[2] ;
+; N/A   ; None              ; 8.708 ns        ; SW[0] ; HEX0[3] ;
+; N/A   ; None              ; 8.672 ns        ; SW[1] ; HEX0[2] ;
+; N/A   ; None              ; 8.589 ns        ; SW[1] ; HEX0[3] ;
+; N/A   ; None              ; 8.433 ns        ; SW[2] ; HEX0[6] ;
+; N/A   ; None              ; 8.399 ns        ; SW[3] ; HEX0[6] ;
+; N/A   ; None              ; 8.252 ns        ; SW[0] ; HEX0[6] ;
+; N/A   ; None              ; 8.133 ns        ; SW[1] ; HEX0[6] ;
+; N/A   ; None              ; 8.087 ns        ; SW[2] ; HEX0[4] ;
+; N/A   ; None              ; 7.904 ns        ; SW[0] ; HEX0[4] ;
+; N/A   ; None              ; 7.893 ns        ; SW[3] ; HEX0[4] ;
+; N/A   ; None              ; 7.787 ns        ; SW[1] ; HEX0[4] ;
 +-------+-------------------+-----------------+-------+---------+
 
 
@@ -125,17 +130,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Sep 20 12:18:37 2022
+    Info: Processing started: Wed Nov 23 22:39:00 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off lab1 -c lab1 --timing_analysis_only
-Info: Longest tpd from source pin "SW[0]" to destination pin "HEX0[4]" is 9.754 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.762 ns) = 0.762 ns; Loc. = PIN_C10; Fanout = 8; PIN Node = 'SW[0]'
-    Info: 2: + IC(4.284 ns) + CELL(0.346 ns) = 5.392 ns; Loc. = LCCOMB_X26_Y17_N20; Fanout = 1; COMB Node = 'prim1:inst|d4~0'
-    Info: 3: + IC(2.430 ns) + CELL(1.932 ns) = 9.754 ns; Loc. = PIN_G15; Fanout = 0; PIN Node = 'HEX0[4]'
-    Info: Total cell delay = 3.040 ns ( 31.17 % )
-    Info: Total interconnect delay = 6.714 ns ( 68.83 % )
+Info: Longest tpd from source pin "SW[2]" to destination pin "HEX0[0]" is 10.298 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.762 ns) = 0.762 ns; Loc. = PIN_D10; Fanout = 7; PIN Node = 'SW[2]'
+    Info: 2: + IC(4.115 ns) + CELL(0.357 ns) = 5.234 ns; Loc. = LCCOMB_X26_Y21_N28; Fanout = 1; COMB Node = 'prim1:inst|WideOr6~0'
+    Info: 3: + IC(3.102 ns) + CELL(1.962 ns) = 10.298 ns; Loc. = PIN_Y14; Fanout = 0; PIN Node = 'HEX0[0]'
+    Info: Total cell delay = 3.081 ns ( 29.92 % )
+    Info: Total interconnect delay = 7.217 ns ( 70.08 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 172 megabytes
-    Info: Processing ended: Tue Sep 20 12:18:37 2022
+    Info: Processing ended: Wed Nov 23 22:39:00 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

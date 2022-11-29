@@ -52,7 +52,7 @@ applicable agreement for further details.
 		(line (pt 272 80)(pt 224 80)(line_width 1))
 	)
 	(drawing
-		(text "Cyclone IV E" (rect 197 145 253 157)(font "Arial" ))
+		(text "Stratix II" (rect 227 145 263 157)(font "Arial" ))
 		(text "inclk0 frequency: 50.000 MHz" (rect 58 59 183 71)(font "Arial" ))
 		(text "Operation Mode: Normal" (rect 58 73 159 85)(font "Arial" ))
 		(text "Clk " (rect 59 96 76 108)(font "Arial" ))
